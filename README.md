@@ -31,7 +31,7 @@ const selectSort=arr=>{
 ```
 
 
-![](selected.gif =100)
+![](selected.gif )
 
 
 
