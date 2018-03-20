@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+
+<script type="text/javascript">
+
+    var ary = [234, 65, 12343, 65, 4, 789, 67, 9, 7, 234, 67, 1, 2, 3, 54];
+
+    //选择排序
+//        var selectSort = (arg) =>{
+//            var minIndex, temp, len = arg.length;
+//            for (var i = 0; i < len-1; i++) {
+//                minIndex = i;
+//                for (var j = i + 1; j < len; j++) {
+//                    if (arg[j] < arg[minIndex]) {
+//                        minIndex = j;
+//                    }
+//
+//                }
+//                temp = arg[i];
+//                arg[i] = arg[minIndex];
+//                arg[minIndex] = temp;
+//            }
+//            return arg;
+//        }
+
+    var selectSort = arr =>{
+        let len = arr.length,
+            minIndex, temp;
+        for (let i = 0; i < len - 1; i++) {
+            minIndex = i;
+            for (let j = i + 1; j < len; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp
+        }
+        return arr;
+    }
+
+
+    //    function selectSort(arr) {
+    //       let len=arr.length,
+    //            minIndex,temp;
+    //        for(let i=0;i<len-1;i++){
+    //                minIndex=i;
+    //                for(let j=i+1;j<len;j++){
+    //                   if(arr[j]<arr[minIndex]){
+    //                        minIndex=j;
+    //                   }
+    //                }
+    //                temp=arr[i];
+    //               arr[i]=arr[minIndex];
+    //               arr[minIndex]=temp;
+    //
+    //        }
+    //
+    //        return arr;
+    //
+    //    }
+    console.log(selectSort(ary));
+
+
+</script>
+</html>
