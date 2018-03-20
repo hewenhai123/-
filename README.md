@@ -6,9 +6,7 @@
 如果小于拟定最小项，让拟定最小项等于当前循环项，从而可以找到后面的最小项，然后让当前循环项和最小项对调。
 
 
-<div  align="center">    
- <img src='./selected.gif' width="100%"/>
-</div>
+
 
 ```js
 
@@ -33,6 +31,7 @@ const selectSort=arr=>{
 ```
 
 
+![](selected.gif =100)
 
 
 
